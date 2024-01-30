@@ -1,13 +1,10 @@
 package com.example.crud231.model;
 
-import jakarta.persistence.*;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import lombok.Data;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 @Data
 @Entity
@@ -31,7 +28,7 @@ public class User {
     private int age;
     @Column
     @Email(message = "Email should not be valid")
-    @NotBlank(message = "Email should not be empty")
+    @NotEmpty(message = "Email should not be empty")
     private String email;
 
 //    public User() {

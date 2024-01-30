@@ -1,6 +1,7 @@
 package com.example.crud231.controller;
 
 import com.example.crud231.model.User;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +9,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import com.example.crud231.service.UserService;
 
-import javax.validation.Valid;
+
 import java.util.List;
 
 @Controller

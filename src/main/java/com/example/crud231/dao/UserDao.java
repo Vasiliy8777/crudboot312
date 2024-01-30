@@ -10,9 +10,7 @@ import java.util.List;
 
 @Repository
 public class UserDao implements Dao {
-
-    private final UserRepository userRepository;
-
+private final UserRepository userRepository;
     @Autowired
     public UserDao(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -21,9 +19,6 @@ public class UserDao implements Dao {
     @Override
     public List<User> getAllUsers() {
         return userRepository.findAll();
-    }
-
-    public UserDao() {
     }
 
     @Override
