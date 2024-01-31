@@ -26,7 +26,7 @@ public class User {
     @Min(value = 0, message = "Age should be greater than 0")
     private int age;
     @Column
-    @Email(message = "Email should not be valid")
+    @Email(message = "Email should be valid")
     @NotBlank(message = "Email should not be empty")
     private String email;
 }
