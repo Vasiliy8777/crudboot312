@@ -10,7 +10,8 @@ import java.util.List;
 
 @Repository
 public class UserDao implements Dao {
-private final UserRepository userRepository;
+    private final UserRepository userRepository;
+
     @Autowired
     public UserDao(UserRepository userRepository) {
         this.userRepository = userRepository;
